@@ -52,37 +52,29 @@ nav {
 Products
 =======================
 */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .products-title {
   text-align: center;
   padding: 2.5rem 0;
   font-family: var(--ff-title);
 }
-.product-card {
+ .product-card {
   padding: 1.5rem;
   text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .product-card {
-    box-shadow: 1px 0px;
-    float: left;
-    width: 50%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .product-card {
-    box-shadow: 1px 0px;
-    float: left;
-    width: 33.33%;
-  }
+  width: 350px;
 }
 .product-title {
-  text-align: center;
-  transform: translateX(-20px);
   font-family: var(--ff-title);
 }
 .product-img {
   padding: 0.75rem 0;
 }
+
 .product-text {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -96,7 +88,9 @@ Products
 }
 .last-paragraph {
   margin-bottom: 3.5rem;
-}
+} 
+
+
 /* 
 =======================
 Footer
