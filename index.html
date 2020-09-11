@@ -12,15 +12,15 @@
       content="The first html project within the html/CSS Udemy Course"
     />
     <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <!-- This is my Header and Menu Bar -->
+    <!-- Start of Header -->
     <header>
-      <div>
-        <img src="./images/logo.png" alt="Coffee Junkie logo" id="CJ-logo" />
-        <h1>Coffee Junkie</h1>
-      </div>
       <nav>
         <ul>
           <li><a href="./index.html" class="navigation">Home</a></li>
@@ -28,71 +28,97 @@
           <li><a href="./numbers.html" class="navigation">Numbers</a></li>
           <li><a href="./contact.html" class="navigation">Contact</a></li>
         </ul>
-      </nav>   
-    <!-- This is the Main Cover Photo -->
-    <div class="banner"></div>
-  </header>
-
+      </nav>
+      <div class="banner">
+        <div class="brand-container">
+          <img
+            src="./images/logo-transparent.png"
+            alt="Coffee Junkie logo"
+            class="brand-img"
+          />
+          <h1 class="brand">Coffee Junkie</h1>
+        </div>
+      </div>
+    </header>
+    <!-- End of Header -->
+    <div class="content-divider"></div>
     <!-- Create 3 Column Grid -->
-    <main>
-      <h2 id="top">Featured Products</h2>
-      <br />
-      <h3>Coffee House Blends</h3>
-      <img src="./images/house-blend.jpeg" alt="Coffee House Blend img" />
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
-        laborum quae debitis! Porro, incidunt non. Sint voluptates quae officia
-        animi itaque earum facere? Alias, voluptatibus. Possimus temporibus,
-        debitis, distinctio quos voluptatibus ducimus accusamus in maxime
-        deserunt laudantium aliquid? Eius reprehenderit eos, aspernatur quia
-        eligendi quas debitis recusandae officia. Veniam, voluptatibus!
-      </p>
-      <br />
-      <br />
-      <span class="details">
-        <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank"
-          >Details</a
-        >
-      </span>
-      <br />
-      <br />
-      <h3>French Roast</h3>
-      <img src="./images/french-roast.jpeg" alt="French Roast img" />
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
-        laborum quae debitis! Porro, incidunt non. Sint voluptates quae officia
-        animi itaque earum facere? Alias, voluptatibus. Possimus temporibus,
-        debitis, distinctio quos voluptatibus ducimus accusamus in maxime
-        deserunt laudantium aliquid? Eius reprehenderit eos, aspernatur quia
-        eligendi quas debitis recusandae officia. Veniam, voluptatibus!
-      </p>
-      <br />
-      <br />
-      <span class="details">
-        <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank"
-          >Details</a
-        >
-      </span>
-      <br />
-      <br />
-      <h3>Columbian Roast</h3>
-      <img src="./images/columbian-roast.jpeg" alt="Columbian Roast img" />
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
-        laborum quae debitis! Porro, incidunt non. Sint voluptates quae officia
-        animi itaque earum facere? Alias, voluptatibus. Possimus temporibus,
-        debitis, distinctio quos voluptatibus ducimus accusamus in maxime
-        deserunt laudantium aliquid? Eius reprehenderit eos, aspernatur quia
-        eligendi quas debitis recusandae officia. Veniam, voluptatibus!
-      </p>
-      <br />
-      <br />
-      <span class="details">
-        <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank"
-          >Details</a
-        >
-      </span>
-    </main>
+    <section class="main">
+      <!-- Products -->
+      <article class="products">
+        <h2 id="top" class="products-title">Featured Products</h2>
+        <!-- Single Product -->
+        <div class="product-card">
+          <h3 class="product-title">Coffee House Blends</h3>
+          <img
+            src="./images/house-blend.jpeg"
+            alt="Coffee House Blend img"
+            class="product-img"
+          />
+          <p class="product-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
+            laborum quae debitis! Porro, incidunt non. Sint voluptates quae
+            officia animi itaque earum facere? Alias, voluptatibus. Possimus
+            temporibus, debitis, distinctio quos voluptatibus ducimus accusamus
+            in maxime deserunt laudantium aliquid? Eius reprehenderit eos,
+            aspernatur quia eligendi quas debitis recusandae officia. Veniam,
+            voluptatibus!
+          </p>
+          <span class="details">
+            <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank">
+              Details
+            </a>
+          </span>
+        </div>
+        <!-- Single Product -->
+        <div class="product-card">
+          <h3 class="product-title">French Roast</h3>
+          <img
+            src="./images/french-roast.jpeg"
+            alt="French Roast img"
+            class="product-img"
+          />
+          <p class="product-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
+            laborum quae debitis! Porro, incidunt non. Sint voluptates quae
+            officia animi itaque earum facere? Alias, voluptatibus. Possimus
+            temporibus, debitis, distinctio quos voluptatibus ducimus accusamus
+            in maxime deserunt laudantium aliquid? Eius reprehenderit eos,
+            aspernatur quia eligendi quas debitis recusandae officia. Veniam,
+            voluptatibus!
+          </p>
+          <span class="details">
+            <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank"
+              >Details</a
+            >
+          </span>
+        </div>
+        <!-- Single Product -->
+        <div class="product-card">
+          <h3 class="product-title">Columbian Roast</h3>
+          <img
+            src="./images/columbian-roast.jpeg"
+            alt="Columbian Roast img"
+            class="product-img"
+          />
+          <p class="product-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
+            laborum quae debitis! Porro, incidunt non. Sint voluptates quae
+            officia animi itaque earum facere? Alias, voluptatibus. Possimus
+            temporibus, debitis, distinctio quos voluptatibus ducimus accusamus
+            in maxime deserunt laudantium aliquid? Eius reprehenderit eos,
+            aspernatur quia eligendi quas debitis recusandae officia. Veniam,
+            voluptatibus!
+          </p>
+          <span class="details">
+            <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank"
+              >Details</a
+            >
+          </span>
+        </div>
+      </article>
+      <!-- End of Products -->
+    </section>
     <br />
     <br />
     <br />
@@ -100,7 +126,7 @@
     <br />
     <br />
     <br />
-    <span>Copyright &copy;2020</span>
+    <span>Copyright Coffee Junkie&copy;2020</span>
     <br />
     <h3>
       <a href="#top">Back To Top</a>

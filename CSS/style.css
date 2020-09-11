@@ -1,5 +1,82 @@
+/* 
+=======================
+Global Variables
+=======================
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+:root {
+  --ff-title: "Grandstander", cursive;
+}
+/* 
+=======================
+Header
+=======================
+*/
+nav {
+  display: none;
+}
 .banner {
-  background: url(./images/background.jpeg) cover/contain no-repeat fixed;
+  background: url(/images/background.jpeg) center/cover no-repeat fixed;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
+}
+.brand-container {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+.brand {
+  font-family: var(--ff-title);
+  color: rgb(235, 235, 235);
+}
+.content-divider {
+  width: 100vw;
+  height: 10px;
+  background: linear-gradient(
+    to right,
+    rgb(78, 66, 34),
+    rgb(79, 97, 46),
+    rgb(78, 66, 34)
+  );
+}
+/* 
+=======================
+Products
+=======================
+*/
+.products-title {
+  text-align: center;
+  padding: 2.5rem 0;
+  font-family: var(--ff-title);
+}
+.product-card {
+  padding: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  .product-card {
+    box-shadow: 1px 0px;
+    float: left;
+    width: 33.33%;
+  }
+}
+.product-title {
+    text-align: center;
+    transform: translateX(-20px);
+}
+.product-img {
+    padding: 0.75rem 0;
+}
+.product-text {
+    letter-spacing: 0.03rem;
+    width: 25vw;
+    min-width: 300px;
+    text-indent: 1.5rem;
+}
+.details {
+    display: none;
 }
